@@ -1,6 +1,5 @@
-//1 is true, 2 is false
-int x=int(random(41, 359));
-int y=int(random(41, 359));
+int x=(int)(Math.random()*315)+41;
+int y=(int)(Math.random()*315)+41;
 boolean moveRight=false;
 boolean moveDown=false;
 void setup()
@@ -18,9 +17,9 @@ void draw()
 }
 void ball()
 {
-  float r=int(random(0, 255));
-  float g=int(random(0, 255));
-  float b=int(random(0, 255));
+  float r=(int)(Math.random()*256);
+  float g=(int)(Math.random()*256);
+  float b=(int)(Math.random()*256);
   stroke(0);
   strokeWeight(1);
   fill(r, g, b);
@@ -63,57 +62,3 @@ void border()
   noFill();
   rect(0,0,400,400);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// void setup()
-// {
-// 	size(270,270);
-// 	background(96);
-// }
-// void draw()
-// {
-// 	goomy();
-// 	ears();
-// 	shade();
-// }
-// void goomy()
-// {
-// 	stroke(32);
-// 	strokeWeight(7);
-// 	fill(229,204,255);
-// 	//body
-// 	ellipse(120,150,200,190);
-// 	//eyes
-// 	ellipse(78,132,6,12);
-// 	ellipse(130,133,6,12);
-// 	//ears
-// 	// beginShape();
-// 	// curveVertex(103,123);
-// 	// curveVertex(48,78);
-// 	// curveVertex(38,52);
-// 	// curveVertex(52,48);
-// 	// endShape();
-// }
-// void ears()
-// {
-// 	beginShape();
-// 	curveVertex(103,123);
-// 	curveVertex(48,78);
-// 	curveVertex(38,52);
-// 	curveVertex(52,48);
-// 	endShape();
-// }
-// void shade()
-// {
-
-// }
